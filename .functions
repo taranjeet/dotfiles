@@ -12,7 +12,7 @@ function hme(){
 
 	commands:
 	 nf 			Creates a new file and opens it with sublime
-	 mk 			Creates a new directory and cd into it
+	 mk 			Creates a new directory and enter it
 
 EOF
 }
