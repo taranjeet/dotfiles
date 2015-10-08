@@ -1,0 +1,4 @@
+# create a new file and open with sublime
+function nf(){
+	touch "$@" && subl "$@"
+}
