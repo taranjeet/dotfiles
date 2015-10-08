@@ -1,0 +1,44 @@
+# git add
+ga(){
+	git add "$1"
+}
+
+# git commit
+gc(){
+	git commit -m "$1"
+}
+
+# git status
+gst(){
+	git status
+}
+
+# git push origin
+gpo(){
+	git push origin "$1"
+}
+
+# git branch
+gbr(){
+	git branch
+}
+
+# git checkout 
+gco(){
+	git checkout "$1"
+}
+
+# git checkout -b
+gcn(){
+	git checkout -b "$1"
+}
+
+# git remote -v
+gr(){
+	git remote -v
+}
+
+# git log
+gl(){
+	git log
+}

@@ -1,18 +1,27 @@
 # create a new file and open with sublime
-function nf(){
+nf(){
 	touch "$@" && subl "$@"
 }
 
-function mk(){
-	mkdir "$@" && cd "$@"
+mk(){
+	mkdir "$@" && cd "$1"
 }
 
-function hme(){
+hme(){
 	cat <<-EOF
 
 	commands:
 	 nf 			Creates a new file and opens it with sublime
 	 mk 			Creates a new directory and enter it
+	 ga 			git add
+	 gc 			git commit -m <your message>
+	 gst 			git status
+	 gpo 			git push origin <your branch>
+	 gbr 			git branch
+	 gco 			git checkout <your branch>
+	 gcn 			git checkout -b <your branch>
+	 gr 			git remote -v
+	 gl 			git log
 
 EOF
 }
