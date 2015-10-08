@@ -2,3 +2,17 @@
 function nf(){
 	touch "$@" && subl "$@"
 }
+
+function mk(){
+	mkdir "$@" && cd "$@"
+}
+
+function hme(){
+	cat <<-EOF
+
+	commands:
+	 nf 			Creates a new file and opens it with sublime
+	 mk 			Creates a new directory and cd into it
+
+EOF
+}
