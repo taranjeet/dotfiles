@@ -19,6 +19,7 @@ hme(){
 	 gc 			git commit -m <your message>
 	 gst 			git status
 	 gpo 			git push origin <your branch>
+	 gpu 			git pull origin <your branch>
 	 gbr 			git branch
 	 gco 			git checkout <your branch>
 	 gcn 			git checkout -b <your branch>

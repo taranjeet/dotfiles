@@ -18,6 +18,11 @@ gpo(){
 	git push origin "$1"
 }
 
+# git pull origin
+gpu(){
+	git pull origin "$1"
+}
+
 # git branch
 gbr(){
 	git branch
