@@ -7,6 +7,8 @@ mk(){
 	mkdir "$@" && cd "$1"
 }
 
+
+
 hme(){
 	cat <<-EOF
 
@@ -22,6 +24,8 @@ hme(){
 	 gcn 			git checkout -b <your branch>
 	 gr 			git remote -v
 	 gl 			git log
+	 gd 			git diff
+	 gds 			git diff --staged
 
 EOF
 }

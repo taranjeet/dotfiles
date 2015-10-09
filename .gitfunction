@@ -42,3 +42,13 @@ gr(){
 gl(){
 	git log
 }
+
+# git diff
+gd(){
+	git diff
+}
+
+# git diff --staged
+gds(){
+	git diff --staged
+}
