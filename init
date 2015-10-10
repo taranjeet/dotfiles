@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# download the trojanguy repo
+mkdir ~/Documents/trojanguy
+cd ~/Documents/trojanguy
+git clone https://github.com/staranjeet/staranjeet.github.io.git .
