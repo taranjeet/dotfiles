@@ -1,0 +1,4 @@
+# imitates createuser functionality
+function cuser(){
+	echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'reachtotj@gmail.com', 'admin')" | ./manage.py shell
+}
