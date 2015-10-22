@@ -13,20 +13,44 @@ hme(){
 	cat <<-EOF
 
 	commands:
+	---------
 	 nf 			Creates a new file and opens it with sublime
 	 mk 			Creates a new directory and enter it
+	 # git functions
 	 ga 			git add
 	 gc 			git commit -m <your message>
 	 gst 			git status
-	 gpo 			git push origin <your branch>
+	 gpo 			git push origin <your branch>	# supports autocomplete
 	 gpu 			git pull origin <your branch>
 	 gbr 			git branch
-	 gco 			git checkout <your branch>
+	 gco 			git checkout <your branch>		# supports autocomplete
 	 gcn 			git checkout -b <your branch>
 	 gr 			git remote -v
 	 gl 			git log
 	 gd 			git diff
 	 gds 			git diff --staged
+
+	# django functions
+	 cuser			creates a superuser <admin> with password <admin>
+
+	aliases:
+	--------
+	 ..				cd ..
+	 e 				exit
+	 vir			vituralenv --no-site-packages pyenv
+	 svenv 			source pyenv/bin/activate
+	 d 				deactivate in case of virtualenv
+	 trojan 		cd ~/Documents/trojanguy
+	 # django aliases
+	 run			python manage.py runserver
+	 mig			python manage.py migrate
+	 col			python manage.py collectstatic --noinput
+	 mkmig			python manage.py makemigrations
+	 djsh			python manage.py shell
+	 mkmigd			python manage.py makemigrations --dry-run
+
+
+
 
 EOF
 }
