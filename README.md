@@ -31,17 +31,17 @@ $ hme 				# a help function to display all aliases and shortcuts
 $ cuser 			# creates a superuser <admin> with password <admin>
 
 # git
-$ ga 			# git add
-$ gc 			# git commit -m <your message>
-$ gst 			# git status
-$ gpo 			# git push origin <your branch>	 * supports AUTOCOMPLETE
-$ gpu 			# git pull origin <your branch>
-$ gbr 			# git branch
-$ gco 			# git checkout <your branch>	* supports AUTOCOMPLETE
-$ gcn 			# git checkout -b <your branch>
-$ gr 			# git remote -v
-$ gl 			# git log
-$ gd 			# git diff
-$ gds 			# git diff --staged
+$ ga 				# git add
+$ gc 				# git commit -m <your message>
+$ gst 				# git status
+$ gpo 				# git push origin <your branch>	 * supports AUTOCOMPLETE
+$ gpu 				# git pull origin <your branch>
+$ gbr 				# git branch
+$ gco 				# git checkout <your branch>	* supports AUTOCOMPLETE
+$ gcn 				# git checkout -b <your branch>
+$ gr 				# git remote -v
+$ gl 				# git log
+$ gd 				# git diff
+$ gds 				# git diff --staged
 
 ```
