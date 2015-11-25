@@ -16,6 +16,9 @@ hme(){
 	---------
 	 nf 			Creates a new file and opens it with sublime
 	 mk 			Creates a new directory and enter it
+	 # frequently used commands list
+	 freq  			Lists the frequently used commands
+	 cfc <id>		Copies the <id> frequent command from .freqcommands
 	 # git functions
 	 ga 			git add
 	 gc 			git commit -m <your message>
