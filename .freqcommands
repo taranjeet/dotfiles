@@ -1,0 +1,8 @@
+python setup.py register -r pypitest
+python setup.py sdist upload -r pypitest
+python setup.py register -r pypi
+python setup.py sdist upload -r pypi
+virtualenv no-site-packages -p /usr/bin/python3.4 py3
+virtualenv no-site-packages py2
+python -m SimpleHTTPServer 8888 &
+sudo fuser -k 8000
