@@ -54,3 +54,31 @@ hme(){
 
 EOF
 }
+
+freq(){
+	cat <<-EOF
+
+	Lists the important used day-to-day commands
+
+	commands:
+	---------
+
+	 # upload a package on pypi
+	 1 -- python setup.py register -r pypitest
+	 2 -- python setup.py sdist upload -r pypitest
+	 3 -- python setup.py register -r pypi
+	 4 -- python setup.py sdist upload -r pypi
+
+	 # python 3.4 virtualenv
+	 5 -- virtualenv --no-site-packages -p /usr/bin/python3.4 py3
+
+	 # python 2.7 virtualenv
+	 6 -- virtualenv --no-site-packages py2
+
+	 # python simple server at 8888
+	 7 -- python -m SimpleHTTPServer 8888 &
+
+	 # kill port 8000, mostly django specific
+	 8 -- sudo fuser -k 8000
+EOF
+}
