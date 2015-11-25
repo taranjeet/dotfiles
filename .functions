@@ -88,6 +88,6 @@ EOF
 
 # copy frequent command <integer>
 function cfc(){
-	readarray lines < .freqcommands
+	readarray lines < ~/dotfiles/.freqcommands
 	echo ${lines["$1"]} | xclip -sel clip
 }
