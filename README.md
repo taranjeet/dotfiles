@@ -25,7 +25,9 @@ $ mkmigd	# python manage.py makemigrations --dry-run
 ```shell
 $ nf <filename>		# creates a newfile and opens it with sublime
 $ mk <directory> 	# creates a new directory and cd into it
-$ hme 				# a help function to display all aliases and shortcuts 
+$ hme 				# a help function to display all aliases and shortcuts
+$ freq				# lists the frequently used commands
+$ cfc <ith> 		# copies the ith command from `.frecommands`
 
 # django 
 $ cuser 			# creates a superuser <admin> with password <admin>
