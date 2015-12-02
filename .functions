@@ -36,6 +36,9 @@ hme(){
 	# django functions
 	 cuser			creates a superuser <admin> with password <admin>
 
+	# helper functions
+	 dwnl <url>  	downloads a song from youtube
+
 	aliases:
 	--------
 	 ..				cd ..
@@ -90,4 +93,8 @@ EOF
 function cfc(){
 	readarray lines < ~/dotfiles/.freqcommands
 	echo ${lines["$1"]} | xclip -sel clip
+}
+
+function dwnl(){
+	youtube-dl --extract-audio --audio-format mp3 "$1"
 }
