@@ -98,3 +98,17 @@ function cfc(){
 function dwnl(){
 	youtube-dl --extract-audio --prefer-ffmpeg --audio-format mp3 "$1"
 }
+
+function utilf(){
+
+	cat <<-EOF
+
+	# to see what all ports are open
+	netstat -lntu
+
+	# to see what all threads a process has created
+	/usr/bin/pstree <pid>
+
+EOF
+	
+}
