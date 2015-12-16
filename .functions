@@ -55,6 +55,11 @@ hme(){
 	 djsh			python manage.py shell
 	 mkmigd			python manage.py makemigrations --dry-run
 
+	 helper functions
+	 ----------------
+
+	 utils          lists the not so common but useful commands
+
 
 
 
