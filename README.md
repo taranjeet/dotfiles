@@ -10,6 +10,14 @@ cd ~/.dotfiles
 #####Includes
 
 1. Alias
+----------
+
+```
+..                      # cd ..
+vir                     # creates a python virtual env
+........                # and many more
+
+```
 
 2. Functions
 ------------
