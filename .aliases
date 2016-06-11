@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+# Navigation
+alias ..='cd ..'
+alias cd..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias -- -='cd -'
+
+# Specific directory navigation
+alias p='cd ~/projects'
+alias dl='cd ~/Downloads/'
+alias dt='cd ~/Desktop'
+
+# Python venv
+alias vir='virtualenv --no-site-packages'
+alias vir3='virtualenv --no-site-packages -p /usr/bin/python3.4'
+alias senv='source pyenv/bin/activate'
+alias d='deactivate'
+alias pnit='touch __init__.py'
+
+# Django specific
+alias run='python manage.py runserver'
+alias mig='python manage.py migrate'
+alias col='python manage.py collectstatic --noinput'
+alias mkmig='python manage.py makemigrations'
+alias djsh='python manage.py shell'
+
+# Git specific
+alias gti='git'
+alias get='git'
+alias ga='git add'
+alias gc='git commit -m'
+alias gall='git add -A && git commit -m'
+alias gst='git status'
+alias gp='git pull'
+alias gpum='git pull origin master'
+alias gr='git remote -v'
+alias gbr='git branch'
+alias gl='git log'
+alias gd='git diff'
+alias gps='git push'
+alias gpsm='git push origin master'
