@@ -1,7 +1,0 @@
-alias run='python manage.py runserver'
-alias mig='python manage.py migrate'
-alias col='python manage.py collectstatic --noinput'
-alias mkmig='python manage.py makemigrations'
-alias djsh='python manage.py shell'
-alias mkmigd='python manage.py makemigrations --dry-run'
-alias pac='touch __init__.py'

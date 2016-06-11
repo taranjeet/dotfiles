@@ -1,6 +1,0 @@
-alias ..='cd ..'
-alias e='exit'
-alias vir='virtualenv --no-site-packages'
-alias d='deactivate'
-alias svenv='source pyenv/bin/activate'
-alias trojan='cd ~/Documents/trojanguy'
