@@ -1,4 +1,6 @@
-# create a new file and open with sublime
+#!/usr/bin/env bash
+
+# creates a new file and open with sublime
 nf(){
 	touch "$@" && subl "$@"
 }
@@ -7,113 +9,17 @@ mk(){
 	mkdir "$@" && cd "$1"
 }
 
-
-
-hme(){
-	cat <<-EOF
-
-	commands:
-	---------
-	 nf 			Creates a new file and opens it with sublime
-	 mk 			Creates a new directory and enter it
-	 # frequently used commands list
-	 freq  			Lists the frequently used commands
-	 cfc <id>		Copies the <id> frequent command from .freqcommands
-	 # git functions
-	 ga 			git add
-	 gc 			git commit -m <your message>
-	 gst 			git status
-	 gpo 			git push origin <your branch>	# supports autocomplete
-	 gpu 			git pull origin <your branch>
-	 gbr 			git branch
-	 gco 			git checkout <your branch>		# supports autocomplete
-	 gcn 			git checkout -b <your branch>
-	 gr 			git remote -v
-	 gl 			git log
-	 gd 			git diff
-	 gds 			git diff --staged
-
-	# django functions
-	 cuser			creates a superuser <admin> with password <admin>
-
-	# helper functions
-	 dwnl <url>  	downloads a song from youtube
-
-	aliases:
-	--------
-	 ..				cd ..
-	 e 				exit
-	 vir			vituralenv --no-site-packages pyenv
-	 svenv 			source pyenv/bin/activate
-	 d 				deactivate in case of virtualenv
-	 trojan 		cd ~/Documents/trojanguy
-	 # django aliases
-	 run			python manage.py runserver
-	 mig			python manage.py migrate
-	 col			python manage.py collectstatic --noinput
-	 mkmig			python manage.py makemigrations
-	 djsh			python manage.py shell
-	 mkmigd			python manage.py makemigrations --dry-run
-
-	 helper functions
-	 ----------------
-
-	 utils          lists the not so common but useful commands
-
-
-
-
-EOF
-}
-
-freq(){
-	cat <<-EOF
-
-	Lists the important used day-to-day commands
-
-	commands:
-	---------
-
-	 # upload a package on pypi
-	 0 -- python setup.py register -r pypitest
-	 1 -- python setup.py sdist upload -r pypitest
-	 2 -- python setup.py register -r pypi
-	 3 -- python setup.py sdist upload -r pypi
-
-	 # python 3.4 virtualenv
-	 4 -- virtualenv --no-site-packages -p /usr/bin/python3.4 py3
-
-	 # python 2.7 virtualenv
-	 5 -- virtualenv --no-site-packages py2
-
-	 # python simple server at 8888
-	 6 -- python -m SimpleHTTPServer 8888 &
-
-	 # kill port 8000, mostly django specific
-	 7 -- sudo fuser -k 8000
-EOF
-}
-
-# copy frequent command <integer>
-function cfc(){
-	readarray lines < ~/dotfiles/.freqcommands
-	echo ${lines["$1"]} | xclip -sel clip
-}
-
 function dwnl(){
-	youtube-dl --extract-audio --prefer-ffmpeg --audio-format mp3 "$1"
+	which youtube-dl > /dev/null 2>&1
+	if [ $? -ne 0 ]; then
+		echo "Youtube-dl not installed"
+	else
+		youtube-dl --extract-audio --prefer-ffmpeg --audio-format mp3 "$1"
+	fi
 }
 
-function utilf(){
-
-	cat <<-EOF
-
-	# to see what all ports are open
-	netstat -lntu
-
-	# to see what all threads a process has created
-	/usr/bin/pstree <pid>
-
-EOF
-	
+# imitates createuser functionality
+# must be run from the directory where manage.py is present
+function cuser(){
+	echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'reachtotj@gmail.com', 'admin')" | ./manage.py shell
 }
