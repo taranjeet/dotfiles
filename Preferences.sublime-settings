@@ -1,0 +1,8 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by file type specific settings.
+{
+    "highlight_line": true,
+    "fade_fold_buttons": false,
+    "bold_folder_labels": true,
+    "translate_tabs_to_spaces": true
+}
