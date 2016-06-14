@@ -65,7 +65,7 @@ fi
 # System wide third party python packages
 # Assuming that they wont be installed
 # Hence skipping the check
-declare -a PYTHON_PACKAGES=('greb' 'django==1.8' 'youtube-dl' 'grip' 'requests');
+declare -a PYTHON_PACKAGES=('greb' 'django==1.8' 'youtube-dl' 'grip' 'requests' 'pep8' 'flake8');
 for each in ${PYTHON_PACKAGES[@]}
 do
     install_python_package $each
