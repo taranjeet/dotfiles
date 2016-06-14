@@ -110,3 +110,6 @@ is_installed "htop"
 if [ $? -ne 0 ]; then
     apt_get_install "htop"
 fi
+
+# create soft link for template.py
+ln -sf "$HOME/.dotfiles/template.py" "/usr/local/bin/template.py"
