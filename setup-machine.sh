@@ -91,15 +91,14 @@ if [$/ -ne 0 ]; then
     ln -sf "$HOME/bin/elasticsearch1.5.0/bin/elasticsearch" "/usr/local/bin/elasticsearch"
 fi
 
-is_installed "node"
-if [ $? -ne 0 ]; then
-    wget https://nodejs.org/dist/v4.4.3/node-v4.4.3-linux-x64.tar.xz -P "$HOME/tars"
-    create_folder "$HOME/bin/node4.4.3/"
-    tar -xf "$HOME/tars/node-v4.4.3-linux-x64.tar.xz" -C "$HOME/bin/node4.4.3/"
-    tar -xf "$HOME/tar/node-v4.4.3-linux-x64.tar.xz"
-    ln -sf "$HOME/bin/node4.4.3/bin/node" "/usr/bin/node"
-    ln -sf "$HOME/bin/node4.4.3/bin/npm" "/usr/bin/npm"
-fi
+# is_installed "node"
+# if [ $? -ne 0 ]; then
+#     wget https://nodejs.org/dist/v4.4.3/node-v4.4.3-linux-x64.tar.xz -P "$HOME/tars"
+#     create_folder "$HOME/bin/node4.4.3/"
+#     tar -xf "$HOME/tars/node-v4.4.3-linux-x64.tar.xz" -C "$HOME/bin/node4.4.3/"
+#     ln -sf "$HOME/bin/node4.4.3/bin/node" "/usr/bin/node"
+#     ln -sf "$HOME/bin/node4.4.3/bin/npm" "/usr/bin/npm"
+# fi
 
 # is_installed "bower"
 # if [ $? -ne 0 ]; then
