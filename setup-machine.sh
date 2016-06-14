@@ -77,6 +77,20 @@ create_folder "$HOME/bin"
 # create `tars` in $HOME folder to hold tar files
 create_folder "$HOME/tars"
 
+# Install java for ES
+apt_get_install "python-software-properties"
+add_ppa "ppa:webupd8team/java"
+apt_get_install "oracle-java7-installer"
+
+# Download and Install Es
+is_installed "elasticsearch"
+if [$/ -ne 0 ]; then
+    wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.5.0.tar.gz -P "$HOME/tars"
+    create_folder "$HOME/bin/elasticsearch1.5.0/"
+    tar -xf "$HOME/tars/elasticsearch-1.5.0.tar.gz" -C "$HOME/bin/elasticsearch1.5.0/"
+    ln -sf "$HOME/bin/elasticsearch1.5.0/bin/elasticsearch" "/usr/local/bin/elasticsearch"
+fi
+
 is_installed "node"
 if [ $? -ne 0 ]; then
     wget https://nodejs.org/dist/v4.4.3/node-v4.4.3-linux-x64.tar.xz -P "$HOME/tars"

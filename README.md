@@ -4,7 +4,6 @@
 
 ```
 git clone https://github.com/staranjeet/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
 ```
 
 #####Includes
