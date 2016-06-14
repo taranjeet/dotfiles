@@ -6,10 +6,17 @@
 git clone https://github.com/staranjeet/dotfiles.git ~/.dotfiles
 ```
 
-#####Includes
+Then add the following lines to your `.bashrc`
 
-1. Alias
-----------
+```
+source ~/.dotfiles/.aliases
+source ~/.dotfiles/.functions
+
+```
+
+###Includes
+
+#####Alias
 
 ```
 ..                      # cd ..
@@ -18,8 +25,8 @@ vir                     # creates a python virtual env
 
 ```
 
-2. Functions
-------------
+#####Functions
+
 
 ```
 $ nf <filename>		    # creates a newfile and opens it with sublime
@@ -27,11 +34,14 @@ $ mk <directory> 	    # creates a new directory and cd into it
 $ dwnl <youtube-url>    # downloads from youtubes and create a mp3 file for the same
 ```
 
-3 Setup Machine
-----------------
+#####Setup Machine
 
 A script which install basic packages specific to my needs. Run the script by
 
 ```
 sudo ./setup-machine.sh
 ```
+
+#####Template for C++ programs
+
+A python script which generates a C++ program template
