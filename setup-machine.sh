@@ -111,5 +111,8 @@ if [ $? -ne 0 ]; then
     apt_get_install "htop"
 fi
 
+# install open ssh
+apt_get_install "openssh-server"
+
 # create soft link for template.py
 ln -sf "$HOME/.dotfiles/template.py" "/usr/local/bin/template.py"
