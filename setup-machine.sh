@@ -114,5 +114,8 @@ fi
 # install open ssh
 apt_get_install "openssh-server"
 
+# for youtube-dl
+apt_get_install "libav-tools"
+
 # create soft link for template.py
 ln -sf "$HOME/.dotfiles/template.py" "/usr/local/bin/template.py"
