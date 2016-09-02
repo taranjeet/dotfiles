@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
 ''' 
-	Template for competitive programming
-	C++ 4.9
+    Template for competitive programming
+    C++ 4.9
 '''
 
 
@@ -12,9 +12,9 @@ import datetime
 PLATFORM = 'codechef'
 
 if len(sys.argv) == 2:
-	name=sys.argv[1]
+    name=sys.argv[1].lower()
 else:
-	name='test'
+    name='test'
 filename=name+'.cpp'
 f1=open(filename,'w')
 now=datetime.datetime.now()
@@ -37,15 +37,17 @@ typedef long long int ll;
 #define RDARR(a,n) FOR(i,n) cin>>a[i];
 #define SOLVE() int t;cin>>t;FOR(tc,t) solve();
 #define PB push_back
+#define TRACEARR(a,n) FOR(i,n) cout<<a[i]<<" ";
+
 
 void solve(){{
 }}
 
 int main(){{ _
 
-	//SOLVE()
-	solve();
-	return 0;
+    //SOLVE()
+    solve();
+    return 0;
 }}'''.format(time=time, problem=name.upper(), platform=PLATFORM)
 f1.write(string)
 f1.close()
