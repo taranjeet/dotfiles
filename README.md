@@ -14,6 +14,16 @@ source ~/.dotfiles/.functions
 
 ```
 
+or to include all at once, add
+
+```
+for file in ~/.dotfiles/.{aliases,functions}; do
+    [ -r "$file" ] && source "$file"
+done
+unset file
+
+```
+
 ###Includes
 
 #####Alias
