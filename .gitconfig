@@ -1,0 +1,22 @@
+[user]
+	name = Taranjeet Singh
+	email = reachtotj@gmail.com
+
+[alias]
+    a = add
+    b = branch
+    c = commit -m
+    d = diff
+    l = log
+    r = remote -v
+    p = pull
+    co = checkout
+    cp = cherry-pick
+    st = status
+    sh = stash
+    cob = checkout -b
+    dfs = diff --staged
+    rao = remote add origin
+    shp = stash pop
+    shl = stash list
+    alias = config --get-regexp 'alias.*'
