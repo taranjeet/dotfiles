@@ -14,7 +14,7 @@ function dwnl(){
 	if [ $? -ne 0 ]; then
 		echo "Youtube-dl not installed"
 	else
-		youtube-dl --extract-audio --prefer-ffmpeg --audio-format mp3 "$1"
+		youtube-dl --extract-audio --prefer-ffmpeg --audio-format mp3 -o %(title)s.%(ext)s "$1"
 	fi
 }
 

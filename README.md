@@ -1,6 +1,6 @@
-###Dotfiles for Ubuntu
+## Dotfiles for Ubuntu
 
-#####Installation
+### Installation
 
 ```
 git clone https://github.com/staranjeet/dotfiles.git ~/.dotfiles
@@ -24,9 +24,9 @@ unset file
 
 ```
 
-###Includes
+### Includes
 
-#####Alias
+#### Alias
 
 ```
 ..                      # cd ..
@@ -35,7 +35,7 @@ vir                     # creates a python virtual env
 
 ```
 
-#####Functions
+#### Functions
 
 
 ```
@@ -44,7 +44,7 @@ $ mk <directory> 	    # creates a new directory and cd into it
 $ dwnl <youtube-url>    # downloads from youtubes and create a mp3 file for the same
 ```
 
-#####Setup Machine
+#### Setup Machine
 
 A script which install basic packages specific to my needs. Run the script by
 
@@ -52,6 +52,12 @@ A script which install basic packages specific to my needs. Run the script by
 sudo ./setup-machine.sh
 ```
 
-#####Template for C++ programs
+### Template for C++ programs
 
-A python script which generates a C++ program template
+A python script which generates a C++ program template. Run the script by
+
+```
+./template.py
+# or
+./template.py <name_of_file>
+```
