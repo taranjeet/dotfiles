@@ -22,6 +22,8 @@ for file in ~/.dotfiles/.{aliases,functions}; do
 done
 unset file
 
+To use .gitconfig, simply move it to the home folder
+
 ```
 
 ### Includes
