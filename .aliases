@@ -15,7 +15,6 @@ alias dt='cd ~/Desktop'
 # Python venv
 alias vir='virtualenv --no-site-packages'
 alias vir3='virtualenv --no-site-packages -p /usr/bin/python3.4'
-alias senv='source pyenv/bin/activate'
 alias d='deactivate'
 alias pnit='touch __init__.py'
 
