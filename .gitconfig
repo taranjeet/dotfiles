@@ -6,6 +6,7 @@
     a = add
     b = branch
     c = commit -m
+    cn = commit --no-verify -m
     d = diff
     l = log
     r = remote -v
@@ -20,3 +21,4 @@
     shp = stash pop
     shl = stash list
     alias = config --get-regexp 'alias.*'
+
