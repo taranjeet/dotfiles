@@ -3,7 +3,7 @@
 ### Installation
 
 ```
-git clone https://github.com/staranjeet/dotfiles.git ~/.dotfiles
+git clone https://github.com/taranjeet/dotfiles.git ~/.dotfiles
 ```
 
 Then add the following lines to your `.bashrc`
