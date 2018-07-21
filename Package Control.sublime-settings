@@ -1,6 +1,7 @@
 {
 	"installed_packages":
 	[
+		"Babel",
 		"BracketHighlighter",
 		"Dracula Color Scheme",
 		"EditorConfig",
