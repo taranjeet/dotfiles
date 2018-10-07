@@ -22,3 +22,5 @@
     shl = stash list
     alias = config --get-regexp 'alias.*'
 
+[pager]
+    branch = false
