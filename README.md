@@ -22,7 +22,9 @@ for file in ~/.dotfiles/.{aliases,functions}; do
 done
 unset file
 
-To use .gitconfig, simply move it to the home folder
+# To use .gitconfig, simply move it to the home folder
+# or create a symlink
+ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
 ```
 
