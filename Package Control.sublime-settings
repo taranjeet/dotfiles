@@ -1,13 +1,18 @@
 {
 	"installed_packages":
 	[
+		"Asciidoctor",
 		"Babel",
 		"BracketHighlighter",
-		"Djanerio",
+		"Djaneiro",
 		"Dracula Color Scheme",
 		"EditorConfig",
 		"HTML-CSS-JS Prettify",
 		"Package Control",
-		"Pretty JSON"
+		"Pretty JSON",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
+		"SublimeLinter-pycodestyle",
+		"TypeScript"
 	]
 }
