@@ -9,6 +9,7 @@ alias -- -='cd -'
 
 # Useful ones
 alias lr='ls -lrth'
+alias pwdc='pwd | pbcopy'
 
 # Specific directory navigation
 alias dl='cd ~/Downloads/'
